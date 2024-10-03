@@ -1,0 +1,169 @@
+/* STYLE DE LA PAGE WEB */
+
+/* Réinitialisation des marges, du padding, et de la boîte de dimensionnement pour tous les éléments */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family:Arial, Helvetica, sans-serif ;
+}
+
+/* Déclaration des variables de couleurs */
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --third-bg-color: #e6e6f9;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+/* Style pour le corps de la page : couleur de fond et désactivation du débordement */
+body {
+    background-color: #fffffff2;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+.form{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style pour le formulaire : position absolue, centrage, taille, couleur de fond, bordure arrondie, animation */
+form {
+    padding: 5px;
+    width: 30%;
+    height: 60vh;
+    background-color: var(--text-color);
+    border-radius: 3px;
+    border: 2px solid #ffffff40;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    box-shadow: 0px 15px 35px #c8c9ca8a;
+    animation: my-anime 2s;
+}
+
+/* Style pour les éléments d'entrée : disposition en colonne, taille, boîte de dimensionnement, marges */
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 5% 3%;
+}
+
+/* Style pour les éléments span : couleur du texte et alignement */
+span {
+    color: #fb0606;
+    text-align: left;
+}
+
+/* Style pour les titres h1 : marges, couleur du texte, taille de la police, police */
+h1 {
+    margin: 3% 2%;
+    color: rgb(22, 22, 22);
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Style pour les étiquettes de formulaire : alignement du texte, marges, police */
+label {
+    text-align: left;
+    margin: 2% 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style pour les champs de formulaire : hauteur, bordure, couleur du texte, bordure arrondie, padding, taille de la police, police, couleur de fond */
+input {
+    height: 6vh;
+    border-bottom: 1px solid rgb(15, 15, 18);
+    color: #13161b;
+    border-radius: 3px;
+    padding: 0% 3%;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: 1px solid #000;
+}
+
+/* Style pour les boutons de type input : couleur de fond, couleur du texte */
+#debuter{
+    background-color: var(--second-bg-color);
+    color: var(--text-color);
+}
+
+/* Style pour les boutons de type input au survol : couleur de fond et du texte */
+#debuter:hover {
+    background-color: rgb(126, 2, 171);
+    color: #fff;
+    font-weight: 700;
+}
+
+/* Animation pour le formulaire */
+@keyframes my-anime {
+    0% {
+        transform: translateY(-100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+/*Style de la page de debut*/
+.page
+{
+    position: absolute;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: none;
+}
+
+/* BUTTONS */
+.button {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    background-color: white;
+}
+  
+.button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+  
+.button[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/*Lien*/
+a{
+    text-decoration: none;
+    color: #56a5eb;
+}
+
+
+
+
+
+

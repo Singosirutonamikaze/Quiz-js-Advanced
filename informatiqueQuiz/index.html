@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>informatiqueQuiz</title>
+
+    <!-- Liens vers les styles -> Utilisation du css -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- Lien vers les scripts -->
+    <script src="./scripts/app.js" defer></script>
+
+    <!--font family-->
+    <link rel="import" href="https://www.frontendmentor.io/pro?ref=style-guide">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+</head>
+<!-- Corps du site web (Ce qui apparait sur la page)-->
+<body>
+    <div class="container">
+        <div class="informatique" id="Quizinformatique">
+            <h2>******QUIZ INFORMATIQUE ("RAYONNER POUR REUSSIR")*******</h2>
+            <div class="choixcontinent" id="choixcontinent" id="page">
+                <h3>QUEL EST TON CONTINENT ?</h3>
+                <div>
+                   <span id="AmeriqueNord" class="AmeriqueNord">AMERIQUE DU NORD</span>
+                </div>
+                <div>
+                    <span id="AmeriqueSud" class="AmeriqueSud">AMERIQUE DU SUD</span>
+                 </div>
+                 <div>
+                    <span id="Europe" class="Europe">EUROPE</span>
+                 </div>
+                 <div>
+                    <span id="Afrique" class="Afrique">AFRIQUE</span>
+                 </div>
+                 <div>
+                    <span id="Asie" class="Asie">ASIE</span>
+                 </div>
+                 <div>
+                    <span id="oceanie" class="oceanie">OCEANIE</span>
+                 </div>
+            </div>
+            <div class="questionReponse" id="questionReponse">
+                <button class="button1">
+                    <span>SCORE :</span>
+                    <span id="score">00</span>
+                </button>
+                <h4 id="question"></h4>
+                <div>
+                    <span class="answers" data-number="1"></span>
+                </div>
+                <div>
+                    <span class="answers"  data-number="2"></span>
+                </div>
+                <div>
+                    <span class="answers" data-number="3"></span>
+                </div>
+                <div>
+                    <span class="answers" data-number="4"></span>
+                </div>
+                <div id="ReprendreSuiv">
+                    <button class="button" id="clear" >Réinitialisé</button>
+                    <button class="button" id="submit" >Suivant</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

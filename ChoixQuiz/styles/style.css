@@ -1,0 +1,67 @@
+
+/* CHOIX DE QUIZ */
+
+body
+{
+    background-color: #fafbfd;
+}
+/* Déclaration des variables de couleurs */
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --third-bg-color: #e6e6f9;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+/* Style pour les éléments avec la classe choixQuiz et l'id Quiz : position absolue, taille, centrage, couleur de fond, bordure arrondie, disposition en grille, affichage par défaut */
+.choixQuiz, #Quiz {
+    position: absolute;
+    width: 80vw;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fcfdfe00;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 2fr);
+    gap: 2%;
+}
+
+/* Style pour les éléments avec la classe gridElement : couleur de fond en dégradé, bordure arrondie, centrage du texte, taille de la police, couleur du texte, curseur */
+.gridElement {
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    color: #fdfafa;
+    cursor: pointer;
+    background-color: #ffffff33;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px #0000000d;
+    border: 1px solid #ffffff40;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+}
+
+/* Style pour les éléments gridElement au survol : couleur de fond */
+.gridElement:hover {
+    background-color: #f2f6f95f;
+}
+
+/* Style pour les liens dans les éléments span : pas de décoration de texte, couleur du texte */
+span a {
+    text-decoration: none;
+    color: #0c0914;
+}
+
+/* Style pour les liens dans les éléments span au survol : couleur du texte */
+span a:hover {
+    color: rgb(5, 13, 51);
+}

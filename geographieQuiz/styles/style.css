@@ -1,0 +1,263 @@
+/* STYLE DE LA PARTIE QUIZ */
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Déclaration des variables de couleurs */
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --third-bg-color: #e6e6f9;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+/* Style pour les éléments avec la classe histoire : centrage du texte, disposition en colonne, couleur du texte, couleur de fond, taille, affichage par défaut */
+.geographie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: #070030;
+    background-color: #fdfefe;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 2%;
+}
+
+/* Style pour les titres h2 : couleur de fond, marges, taille, centrage du texte, police */
+h2 {
+    border-radius: 3px;
+    border: 2px solid #ffffff40;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    box-shadow: 0px 10px 15px #c8c9ca8a;
+    background-color: #fcfeff;
+    width: 100%;
+    margin: 2% 1%;
+    margin-top: -3%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+
+/* Style pour les éléments avec la classe choixcontinent : centrage du texte, disposition en colonne, couleur du texte et de fond, ombre de boîte, bordure arrondie, affichage par défaut */
+.choixcontinent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    color: #090722;
+    border: 2px solid #ffffff40;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    box-shadow: 0px 15px 35px #c8c9ca8a;
+    border-radius: 5px;
+}
+
+/* Style pour les div à l'intérieur des éléments choixcontinent : taille, couleur de fond, marges, boîte de dimensionnement, centrage du texte, taille et poids de la police */
+.choixcontinent div {
+    width: 50%;
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 100px;
+    min-height: 25px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg,
+            var(--btn-bg-2) 0%,
+            var(--btn-bg-1) 55%,
+            var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow:
+        0px 0px 10px rgba(71, 184, 255, 0.5),
+        0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+        inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+        inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+    margin: 2% 5%;
+    box-sizing: border-box;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+}
+
+/* Style pour les div à l'intérieur des éléments choixcontinent au survol : couleur de fond et du texte */
+.choixcontinent div:hover {
+    background-color: #282ff8df;
+    color: white;
+    outline-offset: 1px solid #070030;
+}
+
+/* Style pour les titres h3 : couleur de fond, taille, couleur du texte, centrage du texte */
+h3 {
+    width: 100%;
+    background-color: #02051bf4;
+    width: 80%;
+    height: 8vh;
+    border-radius: 10px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* QCM QUESTION REPONSES */
+
+/* Style pour les éléments avec la classe questionReponse : centrage du texte, disposition en colonne, couleur du texte et de fond, ombre de boîte, bordure arrondie */
+.questionReponse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    flex-direction: column;
+    width: 50%;
+    height: 90vh;
+    color: #000;
+    border-radius: 3px;
+    border: 2px solid #ffffff40;
+    border-top: 1px solid #ffffff80;
+    border-left: 1px solid #ffffff80;
+    border-bottom: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    box-shadow: 0px 15px 35px #c8c9ca8a;
+    border-radius: 12px;
+    display: none;
+}
+
+
+/* Style pour les titres h4 : couleur de fond, taille, couleur du texte, centrage du texte, marges */
+h4 {
+    background-color: #02051bf4;
+    width: 90%;
+    height: 8vh;
+    border-radius: 10px;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+.questionReponse .button1 {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: -5%;
+    left: 25%;
+    width: 25%;
+    height: 6vh;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #feffff;
+    background-color: #02060c;
+}
+
+/* Style pour l'élément ReprendreSuiv : disposition en flex, justification de l'espace entre les éléments, taille, padding, marges, couleur de fond */
+#ReprendreSuiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 7vh;
+    padding: 0% 3%;
+    margin-bottom: -6%;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* Style pour les éléments avec la classe button : taille, centrage du texte, poids de la police, couleur du texte et de fond, curseur */
+.button {
+    width: 15vw;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #feffff;
+    background-color: #0d0809f4;
+    cursor: pointer;
+    border: 1px solid #0d0809f4;
+    border-radius: 5px;
+    outline-offset: -2px;
+}
+
+/* Style pour les éléments button au survol : couleur de fond */
+.button:hover {
+    outline-offset: -3px;
+    outline-color: #fff;
+}
+
+.questionReponse div {
+    width: 50%;
+    --clr-font-main: hsla(0 0% 20% / 100);
+    --btn-bg-1: hsla(194 100% 69% / 1);
+    --btn-bg-2: hsla(217 100% 56% / 1);
+    --btn-bg-color: hsla(360 100% 100% / 1);
+    --radii: 0.5em;
+    cursor: pointer;
+    padding: 0.9em 1.4em;
+    min-width: 100px;
+    min-height: 25px;
+    font-size: var(--size, 1rem);
+    font-weight: 500;
+    transition: 0.8s;
+    background-size: 280% auto;
+    background-image: linear-gradient(325deg,
+            var(--btn-bg-2) 0%,
+            var(--btn-bg-1) 55%,
+            var(--btn-bg-2) 90%);
+    border: none;
+    border-radius: var(--radii);
+    color: var(--btn-bg-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow:
+        0px 0px 10px rgba(71, 184, 255, 0.5),
+        0px 5px 5px -1px rgba(58, 125, 233, 0.25),
+        inset 4px 4px 8px rgba(175, 230, 255, 0.5),
+        inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+    margin: 2% 5%;
+    box-sizing: border-box;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 5px;
+}

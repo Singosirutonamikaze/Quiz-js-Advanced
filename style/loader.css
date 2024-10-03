@@ -1,0 +1,80 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+#presentation {
+    display: none;
+    width: 100%;
+    height: 50vh;
+}
+
+.loader {
+    --s: 5px;
+    /* control the taille */
+    width: calc(10*var(--s));
+    display: grid;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    -webkit-mask: radial-gradient(50% 50%, #0000 calc(99% - 2*var(--s)), #000 calc(101% - 2*var(--s)));
+    animation: rotate 4s linear infinite;
+}
+
+.loader:before {
+    content: "";
+    /* adjust the colors below */
+    background: conic-gradient(from 25deg, #f8a201 25%, #fa2402 0 50%, #fdb3b0 0 75%, #02dde1 0);
+    -webkit-mask: repeating-conic-gradient(#0000 0 25deg, #000 23% 25%),
+        radial-gradient(var(--s) at var(--s) 50%, #000 97%, #0000) left/calc(100% - 2*var(--s)) 100% repeat-x,
+        radial-gradient(var(--s) at 50% var(--s), #000 97%, #0000) top /100% calc(100% - 2*var(--s)) repeat-y;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+.phrase {
+    font-style: italic;
+    font-weight: bold;
+    color: #020207;
+    margin: 5% 0%;
+    text-align: center;
+    opacity: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#start {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    background-color: #151515;
+    color: #eee;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start:hover {
+    transform: translateY(-3px);
+}
+

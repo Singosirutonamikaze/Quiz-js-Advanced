@@ -1,0 +1,62 @@
+<!-- Site web
+    Name : Quiz-Training-H-G-C
+    Author : SINGO Yao Dieu Donné
+    Date : 11/07/2024-->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- En tête du site web -->
+    <head>
+        <!-- Les metas -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Titre du site -->
+        <title>Quiz-Training-H-G-C</title>
+
+        <!-- Liens vers les styles -> Utilisation du css -->
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/responsive.css">
+
+        <!-- Lien vers les scripts -->
+        <script src="scripts/app.js" defer></script>
+
+         <!--font family-->
+         <link rel="import" href="https://www.frontendmentor.io/pro?ref=style-guide">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    </head>
+    <!-- Corps du site web (Ce qui apparait à utilisateur) -->
+    <body>
+        <div class="form">
+            <form method="post" id="formulaire" name="formulaire">
+                <h1>CONNEXION</h1>
+                <div class="input">
+                    <label for="utilisateur">Nom utilisateur</label>
+                    <input type="text" name="utilisateur" id="utilisateur" placeholder="Nom">
+                    <span id="nameError"></span>
+                </div>
+                <div class="input">
+                    <label for="input">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo" placeholder="pseudo">
+                    <span id="pseudoError"></span>
+                </div>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Votre Email" id="email">
+                    <span id="emailError"></span>
+                </div>
+                <div class="input">
+                    <input type="button" name="Debuter" value="DEBUTER" id="debuter" onclick="validerForm()">
+                </div>
+            </form>
+            <div class="page" id="page">
+                <div class="button"><a href="../ChoixQuiz/index.html">Debuter</a></div>
+                <div class="button"><a href="#">Annuler</a></div>
+            </div>
+        </div>
+        
+    </body>
+</html>

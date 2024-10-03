@@ -1,0 +1,17 @@
+@media screen and (max-width:768px) {
+    .choixQuiz, #Quiz{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 2fr);
+        gap: 2%;
+    }
+}
+
+
+
+
+
+
+
+
+
